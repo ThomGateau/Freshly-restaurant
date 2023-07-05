@@ -4,9 +4,9 @@
 
 ### titre h3 
 
-*Liste 1
-*Liste 2
-*Liste 3
+* Liste 1
+* Liste 2
+* Liste 3
 
 Mettre **en gras**
 
