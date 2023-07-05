@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Intergation final du module 4 3wa sur Freshly Restaurant">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshly Restaurant</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="icon" type="image/png" href="instructions/ressources/images/favicon.png">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Merienda:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="container flex_row">
+            <div class="header flex_row">
+                <img src="instructions/ressources/images/logo.png" alt="logo de fresfly restaurant">
+                <h1 class="flex_row">Freshly restaurant</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menus.html">Menus</a></li>
+                    <li class="selected"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page_contact">
+        <section>
+            <h2 class="flex_row">Contact us</h2>
+            <p>If you want to make a reservation, please complete this form.</p>
+            <p class="small">Fields with <span>*</span> are required.</p>
+            <form>
+                <fieldset>
+                    <legend>Reservation</legend>
+                    <div>
+                        <label for="date" class="required">Date</label>
+                        <input type="date" name="date" id="date" required/>
+                    </div>
+                    <div>
+                        <label for="time" class="required">Time</label>
+                        <input type="time" name="time" id="time" required/>
+                    </div>
+                    <div>
+                        <label for="nbr_of_guests" class="required">Number of guests</label>
+                        <input type="number" name="nbr_of_guests" id="nbr_of_guests" required/>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Details</legend>
+                    <div>
+                        <label for="name" class="required">Name</label>
+                        <input type="text" name="name" id="name" required/>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" />
+                    </div>
+                    <div>
+                        <label for="tel" class="required">Telephone</label>
+                        <input type="tel" name="tel" id="tel" required/>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2 class="flex_row">Our location</h2>
+            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-74.00276094675066%2C40.7330982928084%2C-73.999220430851%2C40.734870577831195&amp;layer=mapnik"
+                style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/40.73398/-74.00099">Afficher une carte plus grande</a></small>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container flex_row">
+            <article>
+                <h4>Opening hours</h4>
+                <ul>
+                    <li>Monday Closed</li>
+                    <li>Tue-Wed : 9am - 10pm</li>
+                    <li>Thu-Fri : 9am - 10pm</li>
+                    <li>Sat-Sun : 5pm - 10pm</li>
+                </ul>
+            </article>
+            <article>
+                <h4>Contact</h4>
+                <ul>
+                    <li>13 Christopher Street</li>
+                    <li>New York,</li>
+                    <li>NY 10014-3543</li><br>
+                    <li><a href="tel:+01 2000 800 9999">+01 2000 800 9999</a></li>
+                </ul>
+            </article>
+            <article class="social_networks">
+                <h4>Social networks</h4>
+                <ul class="flex_row">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></a></i>
+                    </li>
+                    <li><a href="https://www.pinterest.fr/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                </ul>
+            </article>
+        </div>
+
+    </footer>
+
+    <!--  ---Mixup---  -->
+    <script type="text/javascript" src="lib/mixitup.min.js"></script>
+
+    <script type="text/javascript">
+        const mixer = mixitup('.filtre_gallery');
+    </script>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/eed3dfb03a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
